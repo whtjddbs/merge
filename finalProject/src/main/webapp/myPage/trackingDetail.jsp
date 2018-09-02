@@ -3,7 +3,7 @@
 
 <style type="text/css">
 .trackingDetail {position: relative; overflow: hidden; height: auto;}
-.trackingDetail h3 {padding-bottom: 10px; border-bottom: 4px solid black;}
+.trackingDetail h3 {padding-bottom: 10px; border-bottom: 4px solid black; margin: 0px;}
 .trackingDetail .stepStatus {margin-top: 84px;}
 .trackingDetail .stepStatus ul {display:table; list-style: none; padding: 0px; width: 100%;}
 .trackingDetail .stepStatus ul li {display:table-cell; width: 14%; float: left; padding-right: 30px;}
@@ -27,6 +27,19 @@
 
 .order_detail {margin-top: 80px;}
 .order_detail .order_table {border-top: 4px solid red; border-collapse: collapse;}
+
+.my_info {margin-top: 80px;}
+.my_info_table {width:100%; border-collapse: collapse;}
+.my_info_table td{padding: 10px 0px 10px 3%; border-bottom: 1px solid #d4d4d4; border-left: 1px solid #d4d4d4;}
+.my_info_table td:first-child {border-left: 0px;}
+
+.my_payment {margin-top: 80px;}
+.my_payment h3 {padding-bottom: 10px; border-bottom: 4px solid black; margin: 0px;}
+.my_payment .my_payment_table {width: 100%; padding: 0px; margin: 0px;}
+.my_payment .my_payment_table td{padding: 10px 0px 10px 3%; border-bottom: 1px solid #d4d4d4; border-left: 1px solid #d4d4d4;}
+.my_payment .my_payment_table td:first-child {border-left: 0px;}
+.my_payment .my_payment_table td div:nth-child(1) {width: 30%; float: left;}
+.my_payment .my_payment_table td div:nth-child(2) {width: 70%; float: left;}
 </style>
 
 <section class="trackingDetail">
@@ -99,6 +112,47 @@
 					</td>
 				</tr>
 			</tbody>
+		</table>
+	</div>
+	
+	<div class="my_info">
+		<h3>구매자정보</h3>
+		<table class="my_info_table">
+			<tr>
+				<td width="15%">주문자</td>
+				<td width="35%">조성윤</td>
+				<td width="15%">이메일주소</td>
+				<td width="35%">jsy_1201@naver.com</td>
+			</tr>
+			<tr>
+				<td>전화번호</td>
+				<td>010-1234-1234</td>
+				<td>휴대폰번호</td>
+				<td>010-9198-2778</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="my_payment">
+		<h3>최초 결제정보</h3>
+		<table class="my_payment_table">
+			<tr>
+				<td width="33%">상품금액</td>
+				<td width="33%">할인금액</td>
+				<td width="34%" rowspan="3">총 결제금액</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div>마일리지 적립</div>
+					<div>1095 마일리지 적립</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div>결제방법</div>
+					<div>신용/체크카드 결제일시 2018-08-30 20:38:38</div>
+				</td>
+			</tr>
 		</table>
 	</div>
 </section>

@@ -3,7 +3,7 @@
 
 <section _myPage class="my_order">
 	<span style="display: inline; float:right; right: 100%;">더보기 ></span>
-	<h3 style="display: inline; float:left; margin: 0px;">최근 주문</h3>
+	<h3 style="display: inline; float:left; margin: 0px; padding-bottom: 10px;">최근 주문</h3>
 	<div style="margin-top: 30px;">
 	<table class="my_order_table" style="width: 100%;">
 		<thead>

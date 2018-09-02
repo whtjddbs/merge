@@ -21,7 +21,7 @@ ul[_myPage] a[_myPage]{font-size:16px;color:#5d5d5d;font-weight:200;text-decorat
 .my_call[_myPage] .mycs[_myPage]{display:block;margin-bottom:8px;font-size:26px;font-weight:700;color:#000}
 .my_call[_myPage] p[_myPage]{margin-bottom:20px;font-size:15px;color:#a0a0a0;line-height:1.85}
 
-.mypage_right {width:73%; min-width:670px; height: 1028px; float: left;}
+.mypage_right {width:73%; min-width:670px; overflow: hidden; height:auto; float: left;}
 .mypage_right > section:nth-child(2) {padding:190px 0px 0px 45px; overflow: hidden; position: relative;}
 
 .my_grade[_myPage] {width: 70%;}
