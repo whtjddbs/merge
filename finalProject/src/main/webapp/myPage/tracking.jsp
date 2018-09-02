@@ -6,7 +6,7 @@
 
 <section class="tracking">
 	<h3>주문배송조회</h3>
-	<div style="border-top: 4px solid black;">
+	<div>
 		<table class="tracking_table">
 			<thead>
 				<tr>

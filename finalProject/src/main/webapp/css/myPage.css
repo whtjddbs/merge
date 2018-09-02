@@ -111,7 +111,7 @@ table.my_order_table {
 .heart_list li p {margin-bottom: 20px;}
 
 /* 주문배송조회 */
-.tracking_table {width: 100%;border-collapse: collapse;}
+.tracking_table {width: 100%;border-collapse: collapse;border-top: 4px solid black;}
 .tracking_table thead td {padding: 10px 0px;text-align: center;}
 .tracking_table tbody td {border-top: 2px solid black;text-align: center;}
 .tracking_table tbody td:first-child {text-align: left;}
