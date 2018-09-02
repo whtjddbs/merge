@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <style type="text/css">
-.trackingDetail h3 {border}
+.trackingDetail h3 {border-bottom: 4px solid black;}
 </style>
 
 <section class="trackingDetail">
