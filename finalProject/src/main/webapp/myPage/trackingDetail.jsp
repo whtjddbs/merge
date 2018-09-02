@@ -2,6 +2,8 @@
     pageEncoding="UTF-8"%>
 
 <style type="text/css">
+h3.myPage_title {padding-bottom: 10px; border-bottom: 4px solid black; margin: 0px;}
+
 .trackingDetail {position: relative; overflow: hidden; height: auto;}
 .trackingDetail h3 {padding-bottom: 10px; border-bottom: 4px solid black; margin: 0px;}
 .trackingDetail .stepStatus {margin-top: 84px;}
@@ -38,8 +40,20 @@
 .my_payment .my_payment_table {width: 100%; padding: 0px; margin: 0px;}
 .my_payment .my_payment_table td{padding: 10px 0px 10px 3%; border-bottom: 1px solid #d4d4d4; border-left: 1px solid #d4d4d4;}
 .my_payment .my_payment_table td:first-child {border-left: 0px;}
-.my_payment .my_payment_table td div:nth-child(1) {width: 30%; float: left;}
-.my_payment .my_payment_table td div:nth-child(2) {width: 70%; float: left;}
+.my_payment .my_payment_table td * {padding: 10px 0px; margin: 0px;}
+.my_payment .my_payment_table td div:nth-child(odd) {width: 30%; float: left;}
+.my_payment .my_payment_table td div:nth-child(even) {width: 70%; float: left;}
+.my_payment .my_payment_table td:nth-child(3) div:nth-child(odd) {width: 50%; float: left;}
+.my_payment .my_payment_table td:nth-child(3) div:nth-child(even) {width: 50%; float: right; text-align: right;}
+
+.my_addr {margin-top: 80px;}
+.my_addr .my_addr_table {width: 100%;}
+.my_addr .my_addr_table td {padding: 10px 0px 10px 3%; border-bottom: 1px solid #d4d4d4; border-left: 1px solid #d4d4d4;}
+.my_addr .my_addr_table td:first-child {width: 15%; border-left: 0px;}
+.my_addr .my_addr_table td:nth-child(3) {width: 15%;}
+
+.my_btnbox {margin-top: 80px; text-align: right;}
+.btn_black {min-width: 82px;padding: 0 17px;border: 1px solid #303033;background: #303033;font-size: 13px;color: #fff;line-height: 40px;}
 </style>
 
 <section class="trackingDetail">
@@ -137,9 +151,28 @@
 		<h3>최초 결제정보</h3>
 		<table class="my_payment_table">
 			<tr>
-				<td width="33%">상품금액</td>
-				<td width="33%">할인금액</td>
-				<td width="34%" rowspan="3">총 결제금액</td>
+				<td width="33%">
+					<h4>상품금액</h4>
+					<div>상품합계</div>
+					<div>109500원</div>
+					<div>배송비</div>
+					<div>0원</div>
+				</td>
+				<td width="33%">
+					<h4>할인금액</h4>
+					<div>쿠폰사용</div>
+					<div>(-)16425원</div>
+					<div>마일리지사용</div>
+					<div>(-)0원</div>
+				</td>
+				<td width="34%" rowspan="3">
+					<div>총 상품가격</div>
+					<div>109500원</div>
+					<div>할인금액</div>
+					<div>(-)16425원</div>
+					<div>총 결제금액</div>
+					<div>93075원</div>
+				</td>
 			</tr>
 			<tr>
 				<td colspan="2">
@@ -154,5 +187,34 @@
 				</td>
 			</tr>
 		</table>
+	</div>
+	
+	<div class="my_addr">
+		<h3 class="myPage_title">배송지 정보</h3>
+		<table class="my_addr_table">
+			<tr>
+				<td>받는사람</td>
+				<td colspan="3">조성윤</td>
+			</tr>
+			<tr>
+				<td>전화번호</td>
+				<td>010-1234-1234</td>
+				<td>휴대폰번호</td>
+				<td>010-9198-2778</td>
+			</tr>
+			<tr>
+				<td>주소</td>
+				<td colspan="3">경기도 구리시 인창동 원일아파트</td>
+			</tr>
+			<tr>
+				<td>배송요청사항</td>
+				<td colspan="3"></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="my_btnbox">
+		<button class="btn_black">주문내역서 출력</button>
+		<button class="btn_black">영수증 출력</button>
 	</div>
 </section>
